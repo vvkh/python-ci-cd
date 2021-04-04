@@ -1,0 +1,19 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: Verify project
+  image: python:3.9
+  commands:
+  - pip install poetry
+  - make install
+  - make lint
+  - make cover
+- name: Upload coverage to codecov
+  image: plugins/codecov
+  settings:
+    token:
+      from_secret: CODECOV_TOKEN
+    files:
+     - coverage.xml
