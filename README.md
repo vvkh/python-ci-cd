@@ -23,5 +23,8 @@ make cover
 [![Maintainability](https://api.codeclimate.com/v1/badges/c1199d743e8ac3410828/maintainability)](https://codeclimate.com/github/vvkh/python-ci-cd/maintainability)
 ### Codecov
 [![codecov](https://codecov.io/gh/vvkh/normalize/branch/github/graph/badge.svg?token=DJMFEBX8H7)](https://codecov.io/gh/vvkh/normalize)
-## Drone.io
+### Drone.io
 [![Build Status](https://cloud.drone.io/api/badges/vvkh/python-ci-cd/status.svg)](https://cloud.drone.io/vvkh/python-ci-cd)
+### Gitlab
+[![pipeline status](https://gitlab.com/valentine.khomutenko/python-ci-cd/badges/master/pipeline.svg)](https://gitlab.com/valentine.khomutenko/python-ci-cd/-/commits/master)
+[![coverage report](https://gitlab.com/valentine.khomutenko/python-ci-cd/badges/master/coverage.svg)](https://gitlab.com/valentine.khomutenko/python-ci-cd/-/commits/master)
