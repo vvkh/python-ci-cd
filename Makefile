@@ -5,7 +5,7 @@ lint:
 	poetry run flake8 fizzbuzz
 
 test:
-	poetry run pytest -v tests
+	poetry run pytest --junitxml=junit.xml -v tests
 
 cover:
-	poetry run pytest -v --cov-report xml --cov-report term --cov=fizzbuzz tests
+	poetry run pytest --junitxml=junit.xml -v --cov-report xml --cov-report term --cov=fizzbuzz tests

@@ -1,0 +1,16 @@
+stages:
+  - verify
+  - upload
+
+verify:
+  image: python:3.9
+  stage: verify
+  script:
+    - pip install poetry
+    - make install
+    - make lint
+    - make cover
+  artifacts:
+    reports:
+      junit: junit.xml
+      cobertura: coverage.xml
